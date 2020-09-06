@@ -203,6 +203,14 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
+
+	{ MODKEY,               XK_h,           ttysend,        {.s = "\033[D"} },
+	{ MODKEY,               XK_j,           ttysend,        {.s = "\033[B"} },
+	{ MODKEY,               XK_k,           ttysend,        {.s = "\033[A"} },
+	{ MODKEY,               XK_l,           ttysend,        {.s = "\033[C"} },
+
+	{ MODKEY,               XK_c,           clipcopy,       {.i =  0} },
+	{ MODKEY,               XK_v,           clippaste,      {.i =  0} },
 };
 
 /*
